@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInBody 1.5s ease-out;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1% 5%;
+    background-color: #355c7d;
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInHeader 2s ease-out;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+#martron-logo {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 4vmin;
+    margin: 0;
+}
+
+header + p {
+    margin-top: 20px;
+    font-size: 2.5vmin;
+    padding: 0 5%;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    animation: fadeInContainer 3s ease-out;
+}
+
+.side-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.side-text {
+    font-size: 2vmin;
+}
+
+.useful-info {
+    font-weight: bold;
+    background-color: rgba(96, 91, 91, 0.7);
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInHeader {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInContainer {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

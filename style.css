@@ -1,0 +1,319 @@
+
+body {
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+    background-color: white;
+    font-weight: initial;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 3%;
+    height: 10vmin;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.logo-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#martron-logo {
+    width: 10vmin;
+    height: auto;
+    border-radius: 20%;
+}
+
+.nav-links {
+    position: absolute;
+    right: 3%;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:first-child {
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.background-first {
+    background-image: url("img/pexels-photo-3171942.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#first-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    margin: 5% 3%;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#first-section:hover {
+    transform: scale(1.02);
+}
+
+.titre-scierie {
+    color: #ffffff;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    font-size: 4vmin;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+}
+
+.text-content {
+    text-align: center;
+    padding: 20px;
+}
+
+#first-section p {
+    font-size: 1.2em;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+#first-section span {
+    font-weight: bold;
+    color: #0ca52a;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-second {
+    background-image: url("img/image00007-modif-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-second::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.background-second > * {
+    position: relative;
+    z-index: 1;
+}
+
+#second-section {
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+}
+
+#second-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-section li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #fafafa;
+    transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+#second-section li:hover {
+    color: #a67c52;
+}
+
+.propos-pro-part h2 {
+    text-align: center;
+    margin-bottom: 2%;
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.propos-pro-part p, #info-time p, #info-time h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.propos-pro-part span {
+    font-weight: bold;
+    color: #0ca52a;
+    transition: color 0.3s ease-in-out;
+}
+
+#info-time {
+    background-color: transparent;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    color: #dacccc;
+}
+
+.background-third {
+    padding: 50px 20px;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+}
+
+.background-fourth {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+#contact-info {
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact-info h2 {
+    margin-bottom: 20px;
+}
+
+#contact-info p {
+    margin: 10px 0;
+}
+
+#map {
+    width: 100%;
+    height: 450px;
+    margin: 20px 0;
+}
+
+#horaires h3 {
+    margin-bottom: 10px;
+}
+
+#horaires p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-rating, .footer-contact, .footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-icon {
+    font-size: 24px;
+}
+
+.rating-text {
+    font-size: 16px;
+}
+
+.footer-contact p, .footer-contact a {
+    margin: 5px 0;
+    color: #fff;
+}
+
+.footer-links a {
+    display: block;
+    color: #0ca52a;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+.no-style-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-style-link:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-link, #info-time h3 {
+        font-size: 4vmin;
+    }
+
+    #second-section li {
+        font-size: 4vmin;
+    }
+}
